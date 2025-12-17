@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>风险预警中心 - 宠医助手</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --td-danger: #f97316;
+      --td-soft: #fff7ed;
+      --td-primary: #fb7185;
+    }
+    body {
+      background: radial-gradient(circle at top, #ffe4e6, #ffedd5);
+    }
+  </style>
+</head>
+<body class="min-h-screen text-slate-900">
+  <div class="max-w-md mx-auto min-h-screen">
+    <header class="px-5 pt-10 pb-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <button class="w-10 h-10 rounded-full bg-white/80 border border-orange-200 flex items-center justify-center text-lg text-slate-600" onclick="history.back()">
+            ←
+          </button>
+          <div>
+            <p class="text-xs text-slate-500">AI 风险词高亮</p>
+            <h1 class="text-xl font-semibold text-slate-900">风险预警中心</h1>
+          </div>
+        </div>
+        <div class="w-10 h-10 rounded-2xl bg-[var(--td-soft)] flex items-center justify-center text-xl">
+          ⚠️
+        </div>
+      </div>
+      <p class="mt-2 text-[11px] text-slate-600">
+        对话中出现「呕吐」「便血」等高风险词时，将自动在此处提醒，并给出行动建议。
+      </p>
+    </header>
+
+    <main class="px-5 pb-8 space-y-4">
+      <section class="rounded-3xl bg-white/85 shadow-lg border border-orange-100 p-4 space-y-3">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <span class="px-2 py-1 rounded-full bg-[var(--td-danger)] text-white text-[10px]">高</span>
+            <p class="font-semibold text-sm text-slate-900">关键词：便血</p>
+          </div>
+          <span class="text-[11px] text-slate-500">奶糖 · 英短</span>
+        </div>
+        <p class="text-xs text-slate-700">
+          最近对话中多次提到「便血」，属于中高风险症状，建议 24 小时内安排线下检查。
+        </p>
+        <div class="rounded-2xl bg-[var(--td-soft)] px-3 py-2 text-[11px] text-slate-700">
+          建议操作：<br>
+          · 记录出血次数及颜色<br>
+          · 观察精神、食欲、体温变化<br>
+          · 如伴随呕吐、持续腹痛，请立即就医
+        </div>
+      </section>
+
+      <section class="rounded-3xl bg-white/85 shadow-lg border border-rose-100 p-4 space-y-3">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <span class="px-2 py-1 rounded-full bg-rose-400 text-white text-[10px]">中</span>
+            <p class="font-semibold text-sm text-slate-900">关键词：持续呕吐</p>
+          </div>
+          <span class="text-[11px] text-slate-500">可乐 · 柯基</span>
+        </div>
+        <p class="text-xs text-slate-700">
+          「呕吐」在对话中出现频率较高，如超过 3 次以上需提高警惕，并评估是否误食异物。
+        </p>
+      </section>
+
+      <section class="rounded-3xl bg-white/85 shadow-lg border border-pink-100 p-4 space-y-3">
+        <h2 class="font-semibold text-sm text-slate-900">预警偏好</h2>
+        <div class="space-y-2 text-xs">
+          <div class="flex items-center justify-between">
+            <span>通知方式</span>
+            <span class="px-3 py-1 rounded-full bg-[var(--td-primary)] text-white text-[11px]">小程序通知</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span>风险等级过滤</span>
+            <span class="px-3 py-1 rounded-full bg-slate-50 text-slate-700 text-[11px]">仅中高风险</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
+
+

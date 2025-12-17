@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>社区 - 宠医助手</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --td-primary: #0052d9;
+      --td-warning: #ed7b2f;
+    }
+  </style>
+</head>
+<body class="bg-slate-100 text-slate-900 min-h-screen">
+  <div class="max-w-md mx-auto min-h-screen bg-white relative pb-24">
+    <header class="bg-white px-5 pt-10 pb-4 border-b border-slate-100">
+      <div class="flex items-center justify-between">
+        <div>
+          <p class="text-xs text-slate-500">宠友生活社区</p>
+          <h1 class="text-xl font-semibold">发现</h1>
+        </div>
+        <button class="px-3 py-2 text-sm rounded-xl bg-[var(--td-primary)] text-white shadow-sm">发布</button>
+      </div>
+      <div class="mt-4 flex flex-wrap text-sm">
+        <span class="basis-1/4 px-1 pb-2 flex justify-center">
+          <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-600 whitespace-nowrap">#生病求助</span>
+        </span>
+        <span class="basis-1/4 px-1 pb-2 flex justify-center">
+          <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-600 whitespace-nowrap">#金毛</span>
+        </span>
+        <span class="basis-1/4 px-1 pb-2 flex justify-center">
+          <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-600 whitespace-nowrap">#新手养狗</span>
+        </span>
+        <span class="basis-1/4 px-1 pb-2 flex justify-center">
+          <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-600 whitespace-nowrap">#猫砂选择</span>
+        </span>
+      </div>
+    </header>
+
+    <main class="px-3 pb-8">
+      <div class="mt-4 grid grid-cols-2 gap-3">
+        <!-- 小红书风：两列瀑布流卡片 -->
+        <article class="rounded-2xl bg-white border border-slate-100 shadow-sm overflow-hidden">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80" class="w-full h-40 object-cover" alt="pet">
+            <div class="absolute left-2 bottom-2 px-2 py-1 rounded-full bg-black/30 text-white text-[10px] flex items-center gap-1">
+              <span class="w-5 h-5 rounded-full bg-white/30 flex items-center justify-center text-xs">🐕</span>
+              <span>阿布</span>
+            </div>
+          </div>
+          <div class="p-2.5 space-y-1.5">
+            <p class="text-[13px] text-slate-900 line-clamp-2">
+              打完疫苗回家有点小情绪，第一次当狗妈有点紧张…
+            </p>
+            <p class="text-[10px] text-slate-400">#金毛 #疫苗日</p>
+            <div class="flex items-center justify-between text-[10px] text-slate-500">
+              <span>1 小时前</span>
+              <div class="flex items-center gap-2">
+                <span>🤍 128</span>
+                <span>💬 35</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="rounded-2xl bg-white border border-slate-100 shadow-sm overflow-hidden">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=600&q=80" class="w-full h-52 object-cover" alt="cat">
+            <div class="absolute left-2 bottom-2 px-2 py-1 rounded-full bg-black/30 text-white text-[10px] flex items-center gap-1">
+              <span class="w-5 h-5 rounded-full bg-white/30 flex items-center justify-center text-xs">🐱</span>
+              <span>奶糖</span>
+            </div>
+          </div>
+          <div class="p-2.5 space-y-1.5">
+            <p class="text-[13px] text-slate-900 line-clamp-3">
+              最近有点拉稀还偶尔便血，已经在宠医助手里问诊，准备带去医院，想听听大家的经验～
+            </p>
+            <p class="text-[10px] text-slate-400">#生病求助 #英短</p>
+            <div class="flex items-center justify-between text-[10px] text-slate-500">
+              <span>3 小时前</span>
+              <div class="flex items-center gap-2">
+                <span>🤍 89</span>
+                <span>💬 18</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="rounded-2xl bg-white border border-slate-100 shadow-sm overflow-hidden">
+          <div class="relative">
+            <img src="https://i0.wp.com/www.arfarf.tw/wp-content/uploads/10%E4%BB%B6%E4%BA%8B2.jpg?resize=661%2C430&ssl=1" class="w-full h-48 object-cover" alt="dog">
+            <div class="absolute left-2 bottom-2 px-2 py-1 rounded-full bg-black/30 text-white text-[10px] flex items-center gap-1">
+              <span class="w-5 h-5 rounded-full bg-white/30 flex items-center justify-center text-xs">🐶</span>
+              <span>球球</span>
+            </div>
+          </div>
+          <div class="p-2.5 space-y-1.5">
+            <p class="text-[13px] text-slate-900 line-clamp-2">
+              新学会的握手技能，求夸！每天都要跟我击掌～
+            </p>
+            <p class="text-[10px] text-slate-400">#训练日常</p>
+            <div class="flex items-center justify-between text-[10px] text-slate-500">
+              <span>昨天</span>
+              <div class="flex items-center gap-2">
+                <span>🤍 56</span>
+                <span>💬 9</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="rounded-2xl bg-white border border-slate-100 shadow-sm overflow-hidden">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=600&q=80" class="w-full h-44 object-cover" alt="cat2">
+            <div class="absolute left-2 bottom-2 px-2 py-1 rounded-full bg-black/30 text-white text-[10px] flex items-center gap-1">
+              <span class="w-5 h-5 rounded-full bg-white/30 flex items-center justify-center text-xs">🐱</span>
+              <span>豆沙</span>
+            </div>
+          </div>
+          <div class="p-2.5 space-y-1.5">
+            <p class="text-[13px] text-slate-900 line-clamp-2">
+              新换的猫抓板它超爱，已经躺平打呼噜了…
+            </p>
+            <p class="text-[10px] text-slate-400">#猫咪日常</p>
+            <div class="flex items-center justify-between text-[10px] text-slate-500">
+              <span>2 天前</span>
+              <div class="flex items-center gap-2">
+                <span>🤍 102</span>
+                <span>💬 21</span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+    <nav class="fixed left-1/2 -translate-x-1/2 bottom-4 w-[360px] max-w-md bg-white border border-slate-200 shadow-lg rounded-2xl py-2 px-2 flex justify-between text-xs text-slate-500">
+      <div class="flex-1 flex flex-col items-center gap-1">
+        <span class="text-lg">🏠</span>
+        <span>首页</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center gap-1">
+        <span class="text-lg">📒</span>
+        <span>档案</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center gap-1">
+        <span class="text-lg">🤖</span>
+        <span>问诊</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center gap-1 text-[var(--td-primary)]">
+        <span class="text-lg">👥</span>
+        <span class="font-medium">社区</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center gap-1">
+        <span class="text-lg">😊</span>
+        <span>我的</span>
+      </div>
+    </nav>
+  </div>
+</body>
+</html>
+

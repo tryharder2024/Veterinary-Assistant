@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的咨询 - 个人中心</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --td-primary: #0ea5e9;
+      --td-soft: #e0f2fe;
+    }
+    body {
+      background: radial-gradient(circle at top, #e0f2fe, #fef9c3);
+    }
+  </style>
+</head>
+<body class="min-h-screen text-slate-900">
+  <div class="max-w-md mx-auto min-h-screen">
+    <header class="px-5 pt-10 pb-4 flex items-center gap-3">
+      <button class="w-10 h-10 rounded-full bg-white/80 border border-sky-200 flex items-center justify-center text-lg text-slate-600" onclick="history.back()">
+        ←
+      </button>
+      <div class="flex-1">
+        <p class="text-xs text-slate-500">个人中心</p>
+        <h1 class="text-xl font-semibold text-slate-900">我的咨询</h1>
+      </div>
+      <div class="w-9 h-9 rounded-2xl bg-[var(--td-soft)] flex items-center justify-center text-lg">
+        🩺
+      </div>
+    </header>
+
+    <main class="px-5 pb-8 space-y-4">
+      <section class="rounded-3xl bg-white/90 shadow-lg border border-sky-100 p-4 space-y-3">
+        <div class="flex items-center justify-between text-xs text-slate-500">
+          <span>最近 30 天 · 共 4 次问诊</span>
+          <span class="text-sky-500">按宠物筛选</span>
+        </div>
+        <div class="space-y-3 text-sm">
+          <div class="flex items-center gap-3 p-3 rounded-2xl bg-slate-50">
+            <div class="w-9 h-9 rounded-full bg-sky-100 flex items-center justify-center text-lg">🐱</div>
+            <div class="flex-1">
+              <p class="font-medium text-slate-900">奶糖 · 便血 / 食欲差</p>
+              <p class="text-[11px] text-slate-500">AI 建议线下就诊 · 昨天 20:31</p>
+            </div>
+            <span class="text-[11px] text-sky-500">查看</span>
+          </div>
+          <div class="flex items-center gap-3 p-3 rounded-2xl bg-slate-50">
+            <div class="w-9 h-9 rounded-full bg-sky-100 flex items-center justify-center text-lg">🐶</div>
+            <div class="flex-1">
+              <p class="font-medium text-slate-900">可乐 · 呕吐 / 进食减少</p>
+              <p class="text-[11px] text-slate-500">轻度胃肠炎 · 本周 周一</p>
+            </div>
+            <span class="text-[11px] text-sky-500">查看</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
+
+

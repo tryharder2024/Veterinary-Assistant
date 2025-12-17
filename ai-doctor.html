@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>智能问诊 - 宠医助手</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --td-primary: #0052d9;
+      --td-warning: #ed7b2f;
+      --td-success: #00a870;
+    }
+  </style>
+</head>
+<body class="bg-slate-100 text-slate-900 min-h-screen">
+  <div class="max-w-md mx-auto min-h-screen bg-white flex flex-col relative pb-24">
+    <header class="bg-white px-5 pt-10 pb-4 border-b border-slate-100">
+      <div class="flex items-center justify-between">
+        <div>
+          <p class="text-xs text-slate-500">AI 智能医生</p>
+          <h1 class="text-xl font-semibold">问诊 · 奶糖</h1>
+        </div>
+        <button class="px-3 py-2 text-sm rounded-xl bg-[var(--td-primary)] text-white shadow-sm">新建对话</button>
+      </div>
+      <div class="mt-3 flex gap-2 text-xs">
+        <span class="px-3 py-1 rounded-full bg-[var(--td-primary)]/10 text-[var(--td-primary)]">RAG 知识库</span>
+        <span class="px-3 py-1 rounded-full bg-orange-50 text-[var(--td-warning)]">风险预警开启</span>
+      </div>
+    </header>
+
+    <main class="flex-1 px-4 py-4 space-y-4 overflow-y-auto">
+      <div class="flex gap-3">
+        <div class="w-8 h-8 rounded-full bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center text-base">🐱</div>
+        <div class="max-w-[75%]">
+          <div class="bg-slate-100 rounded-2xl rounded-tl-sm px-3 py-2 text-sm shadow-sm">
+            今天有点便血，精神不太好，早上没怎么吃东西。
+          </div>
+          <p class="text-[10px] text-slate-500 mt-1">08:30</p>
+        </div>
+      </div>
+
+      <div class="flex gap-3 justify-end">
+        <div class="max-w-[75%] text-right">
+          <div class="bg-[var(--td-primary)] text-white rounded-2xl rounded-tr-sm px-3 py-2 text-sm shadow-sm">
+            已记录，帮你分析风险并给出建议。
+          </div>
+          <p class="text-[10px] text-slate-400 mt-1">08:31</p>
+        </div>
+        <div class="w-8 h-8 rounded-full bg-[var(--td-primary)] flex items-center justify-center text-base text-white">🤖</div>
+      </div>
+
+      <div class="flex gap-3">
+        <div class="w-8 h-8 rounded-full bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center text-base">🐱</div>
+        <div class="max-w-[75%]">
+          <div class="bg-slate-100 rounded-2xl rounded-tl-sm px-3 py-2 text-sm shadow-sm">
+            昨天吃了新猫粮，还有点拉稀。
+          </div>
+          <p class="text-[10px] text-slate-500 mt-1">08:33</p>
+        </div>
+      </div>
+
+      <div class="flex gap-3 justify-end">
+        <div class="max-w-[75%] text-right space-y-2">
+          <div class="bg-[var(--td-primary)] text-white rounded-2xl rounded-tr-sm px-3 py-2 text-sm shadow-sm">
+            初步判断：可能为饮食更换导致的轻度肠胃不适。观察是否持续便血或出现呕吐。
+          </div>
+          <div class="bg-white border border-[var(--td-warning)] text-[var(--td-warning)] rounded-xl px-3 py-2 text-xs shadow-sm text-left">
+            预警：便血关键词已触发，如 24 小时内持续或精神萎靡，请线下就诊。
+          </div>
+          <div class="bg-white border border-slate-200 rounded-xl px-3 py-2 text-xs shadow-sm text-left text-slate-700">
+            检查清单：<br>
+            · 观察粪便颜色/量<br>
+            · 暂停生冷或油腻食物<br>
+            · 补充温水，保持保温<br>
+            · 如呕吐、体温异常，立即就医
+          </div>
+          <p class="text-[10px] text-slate-400">08:34</p>
+        </div>
+        <div class="w-8 h-8 rounded-full bg-[var(--td-primary)] flex items-center justify-center text-base text-white">🤖</div>
+      </div>
+    </main>
+
+    <footer class="border-t border-slate-100 bg-white px-4 py-3">
+      <div class="flex items-center gap-3">
+        <button class="px-3 py-2 rounded-xl bg-slate-100 text-sm text-slate-700">📎 上传病历</button>
+        <div class="flex-1 flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-50 border border-slate-200">
+          <input type="text" class="flex-1 bg-transparent outline-none text-sm" placeholder="输入症状、上传图片或描述异常..." />
+          <span class="text-slate-400">🎤</span>
+        </div>
+        <button class="px-3 py-2 rounded-xl bg-[var(--td-primary)] text-white text-sm shadow-sm">发送</button>
+      </div>
+    </footer>
+    <nav class="fixed left-1/2 -translate-x-1/2 bottom-4 w-[360px] max-w-md bg-white border border-slate-200 shadow-lg rounded-2xl py-2 px-2 flex justify-between text-xs text-slate-500">
+      <div class="flex-1 flex flex-col items-center gap-1">
+        <span class="text-lg">🏠</span>
+        <span>首页</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center gap-1">
+        <span class="text-lg">📒</span>
+        <span>档案</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center gap-1 text-[var(--td-primary)]">
+        <span class="text-lg">🤖</span>
+        <span class="font-medium">问诊</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center gap-1">
+        <span class="text-lg">👥</span>
+        <span>社区</span>
+      </div>
+      <div class="flex-1 flex flex-col items-center gap-1">
+        <span class="text-lg">😊</span>
+        <span>我的</span>
+      </div>
+    </nav>
+  </div>
+</body>
+</html>
+

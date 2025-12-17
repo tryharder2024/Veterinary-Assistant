@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>帖子详情 - 宠友圈</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --td-primary: #fb7185;
+      --td-soft: #ffe4e6;
+    }
+    body {
+      background: #fef2f2;
+    }
+  </style>
+</head>
+<body class="min-h-screen text-slate-900">
+  <div class="max-w-md mx-auto min-h-screen bg-white">
+    <header class="px-4 pt-8 pb-3 flex items-center gap-3 border-b border-slate-100">
+      <button class="w-9 h-9 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center text-lg text-slate-600" onclick="history.back()">
+        ←
+      </button>
+      <p class="text-sm text-slate-500 flex-1">宠友圈 · 帖子详情</p>
+    </header>
+
+    <main class="pb-16">
+      <article>
+        <div class="px-4 pt-4 flex items-center gap-3">
+          <div class="w-9 h-9 rounded-full bg-[var(--td-soft)] flex items-center justify-center text-lg">🐕</div>
+          <div class="flex-1">
+            <p class="text-sm font-semibold text-slate-900">阿布的铲屎官</p>
+            <p class="text-[11px] text-slate-500">1 小时前 · 望京</p>
+          </div>
+          <button class="px-3 py-1.5 rounded-full bg-slate-50 text-[11px] text-slate-600 border border-slate-200">+ 关注</button>
+        </div>
+
+        <div class="mt-3">
+          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80"
+               class="w-full aspect-[4/5] object-cover" alt="post">
+        </div>
+
+        <div class="px-4 py-3 space-y-2">
+          <p class="text-sm text-slate-900">
+            今天带阿布打完疫苗，回来路上一直趴在我脚边撒娇，回家之后有点小情绪，只想窝在沙发角落里。
+            第一次当狗妈有点紧张，想问问大家，这种情况算正常反应吗？
+          </p>
+          <p class="text-[11px] text-slate-500">
+            #金毛 #疫苗日 #新手铲屎官
+          </p>
+        </div>
+
+        <div class="px-4 pb-3 flex items-center justify-between text-xs text-slate-500 border-b border-slate-100">
+          <span>浏览 1.2k · 点赞 128 · 收藏 35</span>
+          <span>来自 宠医助手 · 宠友圈</span>
+        </div>
+
+        <section class="px-4 py-3 space-y-2 border-b border-slate-100">
+          <h2 class="text-sm font-semibold text-slate-900">热门评论 · 12</h2>
+          <div class="space-y-3 text-xs">
+            <div class="flex gap-2">
+              <div class="w-7 h-7 rounded-full bg-slate-100 flex items-center justify-center text-sm">🐱</div>
+              <div class="flex-1">
+                <p class="text-slate-900">奶糖的日记本</p>
+                <p class="mt-0.5 text-slate-700">打完疫苗有点嗜睡和粘人很常见，注意观察精神和食欲就好～</p>
+                <p class="mt-0.5 text-[10px] text-slate-400">30 分钟前 · 👍 23</p>
+              </div>
+            </div>
+            <div class="flex gap-2">
+              <div class="w-7 h-7 rounded-full bg-slate-100 flex items-center justify-center text-sm">🐶</div>
+              <div class="flex-1">
+                <p class="text-slate-900">球球的晚安故事</p>
+                <p class="mt-0.5 text-slate-700">可以准备一点它喜欢的小零食，用轻声安抚，多陪陪它就好了～</p>
+                <p class="mt-0.5 text-[10px] text-slate-400">12 分钟前 · 👍 10</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="fixed left-1/2 -translate-x-1/2 bottom-0 w-full max-w-md bg-white border-t border-slate-200 px-4 py-2 flex items-center gap-3">
+      <div class="flex-1 flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-50 border border-slate-200">
+        <span class="text-slate-400 text-sm">写评论...</span>
+      </div>
+      <button class="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center text-lg">🤍</button>
+      <button class="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center text-lg">⭐</button>
+      <button class="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center text-lg">↗</button>
+    </footer>
+  </div>
+</body>
+</html>
+
+

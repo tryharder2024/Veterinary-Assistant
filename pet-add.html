@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>添加宠物 - 宠医助手</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --td-primary: #fb7185;
+      --td-soft: #ffe4e6;
+    }
+    body {
+      background: radial-gradient(circle at top, #ffe4e6, #e0f2fe);
+    }
+  </style>
+</head>
+<body class="min-h-screen text-slate-900">
+  <div class="max-w-md mx-auto min-h-screen">
+    <header class="px-5 pt-10 pb-4 flex items-center gap-3">
+      <button class="w-10 h-10 rounded-full bg-white/80 border border-pink-200 flex items-center justify-center text-lg text-slate-600" onclick="history.back()">
+        ←
+      </button>
+      <div class="flex-1">
+        <p class="text-xs text-slate-500">宠物档案 · 基础信息</p>
+        <h1 class="text-xl font-semibold text-slate-900">添加新宠物</h1>
+      </div>
+      <div class="w-10 h-10 rounded-2xl bg-[var(--td-soft)] flex items-center justify-center text-xl">
+        🐾
+      </div>
+    </header>
+
+    <main class="px-5 pb-8 space-y-4">
+      <section class="rounded-3xl bg-white/85 shadow-lg border border-pink-100 p-4 space-y-3">
+        <h2 class="font-semibold text-sm text-slate-900">基本信息</h2>
+        <div class="space-y-3 text-sm">
+          <div class="bg-slate-50 rounded-2xl px-3 py-2 border border-slate-100">
+            <p class="text-[11px] text-slate-500 mb-1">昵称</p>
+            <p class="text-slate-400">请输入宠物昵称，如 可乐、奶糖</p>
+          </div>
+          <div class="bg-slate-50 rounded-2xl px-3 py-2 border border-slate-100">
+            <p class="text-[11px] text-slate-500 mb-1">品种</p>
+            <p class="text-slate-400">如 柯基、英短、金毛等</p>
+          </div>
+          <div class="bg-slate-50 rounded-2xl px-3 py-2 border border-slate-100">
+            <p class="text-[11px] text-slate-500 mb-1">生日 / 领养日</p>
+            <p class="text-slate-400">选择一个对你们来说重要的日子</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="rounded-3xl bg-white/85 shadow-lg border border-pink-100 p-4 space-y-3">
+        <h2 class="font-semibold text-sm text-slate-900">健康基础</h2>
+        <div class="space-y-3 text-sm">
+          <div class="bg-slate-50 rounded-2xl px-3 py-2 border border-slate-100">
+            <p class="text-[11px] text-slate-500 mb-1">体重</p>
+            <p class="text-slate-400">请输入当前体重（kg）</p>
+          </div>
+          <div class="flex items-center justify-between bg-slate-50 rounded-2xl px-3 py-2 border border-slate-100 text-sm">
+            <div>
+              <p class="text-[11px] text-slate-500 mb-1">是否绝育</p>
+              <p class="text-slate-400">选择 已绝育 / 未绝育</p>
+            </div>
+            <span class="px-3 py-1 rounded-full bg-white text-slate-500 text-xs border border-slate-200">未选择</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="rounded-3xl bg-white/85 shadow-lg border border-pink-100 p-4 space-y-3">
+        <h2 class="font-semibold text-sm text-slate-900">照片</h2>
+        <div class="flex items-center gap-3 text-xs text-slate-500">
+          <div class="w-16 h-16 rounded-2xl bg-slate-50 border-2 border-dashed border-pink-200 flex items-center justify-center">
+            <span class="text-xl">➕</span>
+          </div>
+          <div class="flex-1 flex flex-col gap-1">
+            <p class="text-slate-700 text-sm">上传头像</p>
+            <p class="text-[11px]">
+              选择一张最能代表 TA 的照片，未来会出现在宠物卡片和社区中。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <button class="w-full mt-2 py-3 rounded-2xl bg-[var(--td-primary)] text-white font-medium text-sm shadow-sm">
+        保存并创建档案
+      </button>
+    </main>
+  </div>
+</body>
+</html>
+
+

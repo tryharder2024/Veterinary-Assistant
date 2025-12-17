@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的发布 - 个人中心</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --td-primary: #fb7185;
+      --td-soft: #ffe4e6;
+    }
+    body {
+      background: radial-gradient(circle at top, #ffe4e6, #fef3c7);
+    }
+  </style>
+</head>
+<body class="min-h-screen text-slate-900">
+  <div class="max-w-md mx-auto min-h-screen">
+    <header class="px-5 pt-10 pb-4 flex items-center gap-3">
+      <button class="w-10 h-10 rounded-full bg-white/80 border border-pink-200 flex items-center justify-center text-lg text-slate-600" onclick="history.back()">
+        ←
+      </button>
+      <div class="flex-1">
+        <p class="text-xs text-slate-500">个人中心</p>
+        <h1 class="text-xl font-semibold text-slate-900">我的发布</h1>
+      </div>
+      <div class="w-9 h-9 rounded-2xl bg-[var(--td-soft)] flex items-center justify-center text-lg">
+        📸
+      </div>
+    </header>
+
+    <main class="px-4 pb-8">
+      <div class="mt-3 grid grid-cols-2 gap-3">
+        <article class="rounded-2xl bg-white border border-slate-100 shadow-sm overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80" class="w-full h-32 object-cover" alt="post">
+          <div class="p-2.5 space-y-1.5">
+            <p class="text-[13px] text-slate-900 line-clamp-2">
+              阿布的疫苗日记：第一次打疫苗的小故事…
+            </p>
+            <p class="text-[10px] text-slate-400">点赞 128 · 评论 35 · 1 小时前</p>
+          </div>
+        </article>
+
+        <article class="rounded-2xl bg-white border border-slate-100 shadow-sm overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=600&q=80" class="w-full h-32 object-cover" alt="post2">
+          <div class="p-2.5 space-y-1.5">
+            <p class="text-[13px] text-slate-900 line-clamp-2">
+              豆沙的新猫抓板，它真的超爱这个角落！
+            </p>
+            <p class="text-[10px] text-slate-400">点赞 56 · 评论 9 · 昨天</p>
+          </div>
+        </article>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
+
+

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>宠医助手 - 原型总览</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .device-frame {
+      width: 393px;
+      height: 852px;
+      border-radius: 28px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      border: 10px solid #0f172a;
+      background: #000;
+    }
+    .device-title {
+      letter-spacing: 0.01em;
+    }
+  </style>
+  <style>
+    body {
+      background: radial-gradient(circle at top left, #fee2e2, #e0f2fe, #fef3c7);
+    }
+  </style>
+</head>
+<body class="min-h-screen text-slate-900">
+  <div class="max-w-7xl mx-auto px-6 py-10">
+    <header class="mb-10">
+      <p class="text-sm text-slate-600 uppercase tracking-[0.2em] mb-2">TDesign 视觉 </p>
+      <h1 class="text-3xl font-semibold text-slate-900">宠医助手小程序原型图</h1>
+      <p class="text-slate-700 mt-2">温馨可爱的宠物健康助手，所有界面以独立 HTML 文件呈现，下方平铺展示便于对比。</p>
+    </header>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
+      <div>
+        <div class="device-title mb-3 text-slate-700 font-medium">Home · 智能概览</div>
+        <div class="device-frame">
+          <iframe src="./home.html" class="w-full h-full border-0 bg-white"></iframe>
+        </div>
+      </div>
+
+      <div>
+        <div class="device-title mb-3 text-slate-700 font-medium">Pets · 数字档案</div>
+        <div class="device-frame">
+          <iframe src="./pets.html" class="w-full h-full border-0 bg-white"></iframe>
+        </div>
+      </div>
+
+      <div>
+        <div class="device-title mb-3 text-slate-700 font-medium">AI Doctor · 智能问诊</div>
+        <div class="device-frame">
+          <iframe src="./ai-doctor.html" class="w-full h-full border-0 bg-white"></iframe>
+        </div>
+      </div>
+
+      <div>
+        <div class="device-title mb-3 text-slate-700 font-medium">Community · 宠友圈</div>
+        <div class="device-frame">
+          <iframe src="./community.html" class="w-full h-full border-0 bg-white"></iframe>
+        </div>
+      </div>
+
+      <div>
+        <div class="device-title mb-3 text-slate-700 font-medium">Profile · 个人中心</div>
+        <div class="device-frame">
+          <iframe src="./profile.html" class="w-full h-full border-0 bg-white"></iframe>
+        </div>
+      </div>
+
+      <div>
+        <div class="device-title mb-3 text-slate-700 font-medium">Pet Detail · 健康详情</div>
+        <div class="device-frame">
+          <iframe src="./pet-detail.html" class="w-full h-full border-0 bg-white"></iframe>
+        </div>
+      </div>
+
+      <div>
+        <div class="device-title mb-3 text-slate-700 font-medium">Pet Add · 添加宠物</div>
+        <div class="device-frame">
+          <iframe src="./pet-add.html" class="w-full h-full border-0 bg-white"></iframe>
+        </div>
+      </div>
+
+      <div>
+        <div class="device-title mb-3 text-slate-700 font-medium">Post Detail · 帖子详情</div>
+        <div class="device-frame">
+          <iframe src="./post-detail.html" class="w-full h-full border-0 bg-white"></iframe>
+        </div>
+      </div>
+
+      <div>
+        <div class="device-title mb-3 text-slate-700 font-medium">Profile · 我的咨询</div>
+        <div class="device-frame">
+          <iframe src="./profile-consult.html" class="w-full h-full border-0 bg-white"></iframe>
+        </div>
+      </div>
+
+      <div>
+        <div class="device-title mb-3 text-slate-700 font-medium">Profile · 我的发布</div>
+        <div class="device-frame">
+          <iframe src="./profile-posts.html" class="w-full h-full border-0 bg-white"></iframe>
+        </div>
+      </div>
+
+      <div>
+        <div class="device-title mb-3 text-slate-700 font-medium">Profile · 我的收藏</div>
+        <div class="device-frame">
+          <iframe src="./profile-favorites.html" class="w-full h-full border-0 bg-white"></iframe>
+        </div>
+      </div>
+
+      <div>
+        <div class="device-title mb-3 text-slate-700 font-medium">EMR · 病历 & OCR</div>
+        <div class="device-frame">
+          <iframe src="./emr-upload.html" class="w-full h-full border-0 bg-white"></iframe>
+        </div>
+      </div>
+
+      <div>
+        <div class="device-title mb-3 text-slate-700 font-medium">Alerts · 风险预警中心</div>
+        <div class="device-frame">
+          <iframe src="./alerts.html" class="w-full h-full border-0 bg-white"></iframe>
+        </div>
+      </div>
+
+      <div>
+        <div class="device-title mb-3 text-slate-700 font-medium">Post · 发布动态</div>
+        <div class="device-frame">
+          <iframe src="./post-editor.html" class="w-full h-full border-0 bg-white"></iframe>
+        </div>
+      </div>
+
+      <div>
+        <div class="device-title mb-3 text-slate-700 font-medium">Settings · 通用设置</div>
+        <div class="device-frame">
+          <iframe src="./settings.html" class="w-full h-full border-0 bg-white"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

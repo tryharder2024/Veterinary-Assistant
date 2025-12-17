@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的收藏 - 个人中心</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --td-primary: #facc15;
+      --td-soft: #fef9c3;
+    }
+    body {
+      background: radial-gradient(circle at top, #fef9c3, #e0f2fe);
+    }
+  </style>
+</head>
+<body class="min-h-screen text-slate-900">
+  <div class="max-w-md mx-auto min-h-screen">
+    <header class="px-5 pt-10 pb-4 flex items-center gap-3">
+      <button class="w-10 h-10 rounded-full bg-white/80 border border-amber-200 flex items-center justify-center text-lg text-slate-600" onclick="history.back()">
+        ←
+      </button>
+      <div class="flex-1">
+        <p class="text-xs text-slate-500">个人中心</p>
+        <h1 class="text-xl font-semibold text-slate-900">我的收藏</h1>
+      </div>
+      <div class="w-9 h-9 rounded-2xl bg-[var(--td-soft)] flex items-center justify-center text-lg">
+        ⭐
+      </div>
+    </header>
+
+    <main class="px-4 pb-8 space-y-4">
+      <section class="rounded-3xl bg-white/95 shadow-lg border border-amber-100 p-4 space-y-3">
+        <div class="flex items-center justify-between text-xs text-slate-500">
+          <span>共收藏 18 条内容</span>
+          <span class="text-amber-500">按类型筛选</span>
+        </div>
+        <div class="space-y-3 text-sm">
+          <div class="flex gap-3">
+            <div class="w-14 h-14 rounded-2xl bg-slate-50 overflow-hidden flex-shrink-0">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" class="w-full h-full object-cover" alt="fav1">
+            </div>
+            <div class="flex-1">
+              <p class="font-medium text-slate-900 line-clamp-2">
+                金毛疫苗经验贴：打完疫苗后的注意事项和安抚技巧收藏备用。
+              </p>
+              <p class="mt-1 text-[11px] text-slate-500">来自 宠友圈 · 上周收藏</p>
+            </div>
+          </div>
+
+          <div class="flex gap-3">
+            <div class="w-14 h-14 rounded-2xl bg-slate-50 overflow-hidden flex-shrink-0">
+              <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=400&q=80" class="w-full h-full object-cover" alt="fav2">
+            </div>
+            <div class="flex-1">
+              <p class="font-medium text-slate-900 line-clamp-2">
+                猫咪肠胃调理指南：从饮食到环境，帮助缓解拉稀问题。
+              </p>
+              <p class="mt-1 text-[11px] text-slate-500">来自 宠医知识库 · 昨天收藏</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
+
+
